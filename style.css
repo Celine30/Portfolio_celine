@@ -1,0 +1,34 @@
+body {
+  min-height: 100%;
+}
+
+header {
+  height: 50px;
+  background-color: #3ad1e2 !important;
+}
+header .bg-dark {
+  background-color: #3ad1e2 !important;
+}
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+section.coeur {
+  border: 2px solid red;
+  position: fixed;
+  min-height: 90%;
+  background-image: url("image/ordinateur.png");
+  opacity: 0.15;
+  background-position: left;
+}
+
+footer section.pied {
+  border: red 2px solid;
+  min-height: 50px;
+  background-color: #3ad1e2 !important;
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
