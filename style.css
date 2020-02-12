@@ -1,34 +1,72 @@
+@charset "UTF-8";
+@-webkit-keyframes animation_icone {
+  /* Safari, Opera, Chrome */
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(120px);
+  }
+}
+@keyframes animation_icone {
+  /* Tous les autres navigateurs */
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(120px);
+  }
+}
 body {
-  min-height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-
-header {
-  height: 50px;
+body header {
+  min-height: 50px;
+  background-color: #3ad1e2 !important;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body header .bg-dark {
   background-color: #3ad1e2 !important;
 }
-header .bg-dark {
-  background-color: #3ad1e2 !important;
-}
-header img {
+body header img {
   width: 50px;
   height: 50px;
 }
-
-section.coeur {
-  border: 2px solid red;
-  position: fixed;
-  min-height: 90%;
-  background-image: url("image/ordinateur.png");
-  opacity: 0.15;
-  background-position: left;
+body .section-slider {
+  background: url("image/ordinateur.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  /*  Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
+  min-height: 90vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-footer section.pied {
-  border: red 2px solid;
-  min-height: 50px;
+body .section-slider section.coeur {
+  overflow: hidden;
+  padding: 20px;
+}
+body .section-slider section.coeur p {
+  position: relative;
+  background: #3ad1e2;
+  width: 200px;
+  left: -165px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body .section-slider section.coeur p:hover {
+  animation: animation_icone 1s;
+  -webkit-animation: animation_icone 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+body footer {
+  height: 50px;
   background-color: #3ad1e2 !important;
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=style.css.map */
