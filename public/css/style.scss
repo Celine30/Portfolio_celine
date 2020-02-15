@@ -71,7 +71,7 @@ body {
   }
 
   .section-presentation {
-    background: url("image/ordinateur.png") no-repeat center fixed;
+    background: url("../image/ordinateur.png") no-repeat center fixed;
  //   -webkit-background-size: cover; /*  Chrome et Safari */
  //   background-size: cover; /* version standardisée */
     min-height: 90vh;
@@ -118,7 +118,7 @@ body {
         font-weight: 800;
         color: transparent;
         font-size: 90px;
-        background: url("image/ordinateur2.png") repeat;
+        background: url("../image/ordinateur2.png") repeat;
         background-position: 1000% 50%;
         -webkit-background-clip: text;
         position: relative;
