@@ -55,7 +55,7 @@ $color-my: rgb(58, 209, 226);
   }
   25%{
     width: 150px;
-    height: 15px;
+    height: 50px;
     border-top-color: $color-my;
     border-bottom-color:transparent ;
     border-left-color: transparent;
@@ -63,7 +63,7 @@ $color-my: rgb(58, 209, 226);
   }
   50%{
     width: 150px;
-    height: 15%;
+    height: 50px;
     border-top-color:$color-my;
     border-bottom-color: transparent;
     border-left-color: transparent;
@@ -71,7 +71,7 @@ $color-my: rgb(58, 209, 226);
   }
     75%{
     width: 150px;
-    height: 15%;
+    height: 50px;
     border-top-color:$color-my;
     border-bottom-color: $color-my;
     border-left-color: transparent;
@@ -79,7 +79,7 @@ $color-my: rgb(58, 209, 226);
   }
     100%{
     width: 150px;
-    height: 15%;
+    height: 50px;
     border-top-color:$color-my;
     border-bottom-color: $color-my;
     border-left-color: $color-my;
@@ -106,10 +106,23 @@ body {
       margin-top: 10px;
     }
 
-    nav div#menu ul li a:hover{
-      color: $color-my;
+    nav div.menu ul li a:hover{
+      color: $color-my!important;
     }
 
+    .navbar-toggler {
+      width: 47px;
+      height: 34px;
+      padding-top: 8px;
+
+      .line {
+        width: 100%;
+        float: left;
+        height: 2px;
+        background-color: $color-my;
+        margin-bottom: 5px;
+      }
+    }
   }
 
   .section-presentation {
@@ -147,9 +160,9 @@ body {
       border-right: $color-my 1px solid;
       color: #333333;
       width: 700px;
-      font-size: 1em;
+      //font-size: 1em;
       bottom: 20px;
-      left: 20vw;
+      right: 55px;
 
       .name {
         font-weight: 800;
@@ -213,8 +226,6 @@ body {
       figure:hover img {
         animation: animation_photo 1s forwards;
         -webkit-animation: animation_photo 1s forwards;
- //       animation-fill-mode: forwards;
- //       -webkit-animation-fill-mode: forwards;
       }
 
       figure:hover div.backgroundGrey {
@@ -222,7 +233,6 @@ body {
       }
 
      }
-
 
     .see_more{
       font-weight: 800;
@@ -278,5 +288,29 @@ body {
 
 }
 
+@media screen and (max-width: 990px) {
+    .section-name {
+      width: 500px!important;
+      bottom: 70px!important;
+
+      .name {
+        font-size: 70px!important;
+        line-height: 50px!important;
+        letter-spacing: -5px!important;
+      }
+    }
+}
 
 
+@media screen and (max-width: 768px) {
+    .section-name {
+      width: 400px!important;
+      bottom: 70px!important;
+
+      .name {
+        font-size: 50px!important;
+        line-height: 40px!important;
+        letter-spacing: -4px!important;
+      }
+    }
+}
