@@ -9,7 +9,7 @@ $color-my: rgb(58, 209, 226);
   }
 
   100% {
-    transform: translateX(120px);
+    transform: translateX(110px);
   }
 }
 
@@ -19,7 +19,7 @@ $color-my: rgb(58, 209, 226);
   }
 
   100% {
-    transform: translateX(120px);
+    transform: translateX(110px);
   }
 }
 
@@ -125,8 +125,8 @@ body {
     }
   }
 
-  .section-presentation {
-    background: url("../image/ordinateur.png") no-repeat center fixed;
+  .section-presentation, .section-formulaire {
+
     min-height: 90vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 20px;
@@ -145,8 +145,12 @@ body {
         width: 200px;
         left: -165px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: $color-my;
+
+        a{
+          color: $color-my;
+        }
       }
+
 
       p:hover {
         animation: animation_icone 1s;
@@ -263,6 +267,9 @@ body {
 
   }
 
+  .section-presentation{
+    background: url("../image/ordinateur.png") no-repeat center fixed;
+  }
 
   footer {
     height: 50px;

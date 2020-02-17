@@ -1,5 +1,7 @@
 {%  extends 'template.twig' %}
-
+{% block head %}
+    - accueil
+{% endblock %}
 
 {% block content %}
 
@@ -8,9 +10,9 @@
     <section id="intro" class="position-relative primsbox">
 
         <section class="container section-contact px-0 d-flex flex-column">
-            <p class="icone-menu icone-menu1 d-inline text-right p-2">Profil Github <i class="fab fa-github pt-2 pb-2 pl-2 pr-1"></i></i> </p>
-            <p class="icone-menu icone-menu2 d-inline text-right p-2">Profil LinkedIn <i class="fab fa-linkedin-in pt-2 pb-2 pl-2 pr-1"></i></i></p>
-            <p class="icone-menu icone-menu3 d-inline text-right p-2">Me contacter <i class="fas fa-at pt-2 pb-2 pl-2 pr-1"></i></p>
+            <p class="icone-menu icone-menu1 d-inline text-right p-2"><a href="https://github.com/Celine30" target="_blank">Profil  GitHub<i class="fab fa-github pt-2 pb-2 pl-2 pr-1 ml-2"></i></a></p>
+            <p class="icone-menu icone-menu2 d-inline text-right p-2"><a href="https://www.linkedin.com/in/celine-caurier/" target="_blank">Profil LinkedIn <i class="fab fa-linkedin-in pt-2 pb-2 pl-2 pr-1"></i></a></p>
+            <p class="icone-menu icone-menu3 d-inline text-right p-2"><a href="index.php?action=user!contact">Me contacter <i class="fas fa-at pt-2 pb-2 pl-2 pr-1"></i></a></p>
         </section>
 
         <section class="section-name word position-absolute">
