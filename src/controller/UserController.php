@@ -22,6 +22,10 @@ class UserController
         return $this->twig->render('home.twig');
     }
 
+    public function contact()
+    {
+        return $this->twig->render('contact.twig');
+    }
 }
 
 
