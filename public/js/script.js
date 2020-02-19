@@ -11,6 +11,9 @@ $(document).ready(function(){
     traY = ((4 * mouseY) / 570) + 50;
     console.log(traX);
     $(".name").css({"background-position": traX + "%" + traY + "%"});
+    $(".contact").css({"background-position": traX + "%" + traY + "%"});
+    $(".parcours").css({"background-position": traX + "%" + traY + "%"});
+    $(".realisation").css({"background-position": traX + "%" + traY + "%"});
   });
 });
 

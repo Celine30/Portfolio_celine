@@ -1,7 +1,8 @@
 $color-text: #333;
 $color-primary:  #333;
 $color-my: rgb(58, 209, 226);
-//$color-second: rgb(146, 134, 129);
+
+////*********home&template*********///////
 
 @-webkit-keyframes animation_icone { /* Safari, Opera, Chrome */
   0% {
@@ -88,7 +89,7 @@ $color-my: rgb(58, 209, 226);
 }
 
 body {
-  min-height: 100vh;
+  //min-height: 100vh;
   width: 100vw;
 
   header {
@@ -125,11 +126,16 @@ body {
     }
   }
 
-  .section-presentation, .section-formulaire {
-
+  .section-presentation, .section-formulaire, .section-parcours, .section-realisation {
+   background: url("../image/ordinateur.png") no-repeat center fixed;
     min-height: 90vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 20px;
+    padding-top: 10px;
+
+    div a {
+    color: $color-text;
+    }
 
     .primsbox{
       padding-top: 30px;
@@ -267,9 +273,7 @@ body {
 
   }
 
-  .section-presentation{
-    background: url("../image/ordinateur.png") no-repeat center fixed;
-  }
+
 
   footer {
     height: 50px;
@@ -324,3 +328,4 @@ body {
     }
   }
 }
+
