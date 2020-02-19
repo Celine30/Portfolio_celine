@@ -10,35 +10,46 @@ use Project\Model;
 class BackController
 {
 
+     protected $twig = null;
+
+    public function __construct(Environment $twig)
+    {
+        $this->twig = $twig;
+    }
+
+
         public function contact()
     {
 
-        $message='* message envoyé *';
-
-     /*EN LOCAL
-
-        $to      = 'celine@izycom-communication.fr';
+        $to      = 'celi.caurier@gmail.com';
+        $subject = htmlspecialchars($_POST['sujet']);
         $corpsMail = htmlspecialchars($_POST['message']);
         $headers = array(
-            'From' => 'contactGBAF.fr',
+            'From' => 'contactportfolio.fr',
             'Reply-To' => htmlspecialchars($_POST['mail']),
             'X-Mailer' => 'PHP/' . phpversion()
         );
 
-       mail($to, $corpsMail, $headers);
-
-*/
+       mail($to, $subject, $corpsMail, $headers);
 
 
-    /*SUR LE SERVEUR  */
+            $message_ok = 'Message bien envoyé ! ';
+            return $this->twig->render('contact.twig', array(
+                'message' => $message_ok
+            ));
+
+        }
+
+
+/*SUR LE SERVEUR
 
 
         $name       = @trim(stripslashes($_POST['nom']));
         $fromBis    = @trim(stripslashes($_POST['mail']));
         $from       = 'contact@gbaf.fr';
-        $subject    = @trim(stripslashes($_POST['demande']));
-        $corps      = @trim(stripslashes($_POST['contact']));
-        $to         = 'celi.caurier@gmail.com';
+        $subject    = @trim(stripslashes($_POST['sujet']));
+        $corps      = @trim(stripslashes($_POST['message']));
+        $to         = 'celine@izycom-communication.fr';
 
 
         $headers  = "";
@@ -49,17 +60,21 @@ class BackController
         $headers .= "Subject: {$subject}\r\n";
         $headers .= "X-Mailer: PHP/".phpversion()."\r\n";
 
-        mail($to, $subject, $corps, $headers);
+        //mail($to, $subject, $corps, $headers);
+
+    echo($to);
+    echo("<br>");
+     echo($subject);
+    echo("<br>");
+  echo($corps);
+    echo("<br>");
+ echo($headers);
+
+  echo($fromBis);
+
+*/
 
 
 
-
-
-  //      return $this->twig->render('contact.twig', array(
-  //          'message'=> $message
-//        ));
-
-
-    }
 
 }

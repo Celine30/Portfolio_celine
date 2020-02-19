@@ -8,55 +8,62 @@
 
 {% block content %}
 
-    <main class="section-formulaire px-0 container">
+    <main class="container section-formulaire ">
 
+    <div class="container">
+        <a href="index.php?action=user!home" > <i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+    </div>
 
+    <section class="form px-0 m-5 mx-auto">
 
+        <h1 class="contact">Me contacter</h1>
 
-    <a href="index.php?action=user!home"> <i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+        <article class="form_block" >
+            <p class="form_title"><em>Email</em></p>
+            <a href="mailto: celine@izycom-communication.fr" style="color: rgb(52, 52, 52); text-decoration: none; font-family: sans-serif, Arial, Verdana ">celine@izycom-communication.fr</a>
+        </article>
 
+        <article class="form_block">
+            <p class="form_title"><em>Formulaire de contact</em></p>
+            <form id="contact" method="post" action="index.php?action=back!contact">
 
-<h1>NOUS CONTACTER</h1>
+                <i style="color:red"><br>{{ message }}</i>
 
-    <article>
-        <p><em>Par Email</em><br>
-        <a href="mailto: celine@izycom-communication.fr" style="color: rgb(52, 52, 52); text-decoration: none; font-family: sans-serif, Arial, Verdana ">celine@izycom-communication.fr</a></p>
-    </article>
+                <div class="champs">
+                    <label for="name">Votre Nom *</label>
+                    <input type="text" id="name" aria-describedby="name" placeholder="Votre nom" name="name"
+                           required="required">
+                </div>
 
-    <article>
-    <p><em>Remplir le Formulaire de contact</em></p>
+                <div class="champs">
+                    <label for="mail">Votre Email *</label>
+                    <input type="email" id="mail" aria-describedby="mail" placeholder="Votremail@gmail.com" name="mail"
+                           required="required">
+                </div>
 
-        <form id="contact" method="post" action="index.php?action=back!contact">
+                 <div class="champs">
+                    <label for="sujet">Sujet *</label>
+                    <input type="text" id="sujet" aria-describedby="sujet" placeholder="" name="sujet"
+                           required="required">
+                </div>
 
-            <div class="champs">
-                <label for="name">Votre Nom</label>
-                <input type="text" id="name" aria-describedby="name" placeholder="Votre nom" name="name"
-                       required="required">
-            </div>
+                <div class="champs">
+                    <label for="message">Votre message *</label>
+                    <textarea id="message" aria-describedby="message" placeholder="Votre message" name="message"
+                              required="required"></textarea>
+                </div>
 
-            <div class="champs">
-                <label for="mail">Votre Email</label>
-                <input type="email" id="mail" aria-describedby="mail" placeholder="Votremail@gmail.com" name="mail"
-                       required="required">
-            </div>
+                <div class="champs button">
+                    <button class=" pl-3"> Envoyer <i class="fas fa-paper-plane"></i></button>
+                <!--    <input type="submit" id="submit" value="envoyer "/> -->
+                </div>
 
-            <div class="champs">
-                <label for="message">Votre message</label>
-                <textarea id="message" aria-describedby="message" placeholder="Votre message" name="message"
-                          required="required"></textarea>
-            </div>
+            </form>
+            <p class="form_info text-left"><i>* champs obligatoire </i></p>
+        </article>
 
-            <div class="champs">
-                <input type="submit" id="submit" value="envoyer"/>
-            </div>
+    </section>
 
-        </form>
+</main>
 
-    </article>
-
-
-
-
-
-    </main>
 {% endblock %}

@@ -1,0 +1,47 @@
+
+      h1 {
+            font-weight: 800;
+            color: transparent;
+            font-size: 60px;
+            background: url("../image/ordinateur2.png") repeat 990% 50%;
+            -webkit-background-clip: text;
+            position: relative;
+            text-align: center;
+            line-height: 70px;
+            letter-spacing: -6px;
+            text-transform: uppercase;
+      }
+
+
+
+      //******************REALISATION***********************//
+
+
+      .rea_block {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            //margin-top: 20px;
+            padding: 10px 10px 10px 25px;
+            display: flex;
+            width: 80%;
+            margin:auto auto 20px auto;
+            cursor: pointer;
+
+            section img {
+                width: 277px;
+            }
+            section.resume {
+                  width: 96%;
+                  margin:  auto  auto  auto 50px;
+            }
+            section.button_site i{
+                  font-size: 2em;
+            }
+      }
+
+      .rea_block:hover {
+            background-color: rgba(0, 206, 220, 0.5);
+      }
+
+

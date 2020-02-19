@@ -26,6 +26,16 @@ class UserController
     {
         return $this->twig->render('contact.twig');
     }
+
+    public function parcours()
+    {
+        return $this->twig->render('parcours.twig');
+    }
+
+    public function realisation()
+    {
+        return $this->twig->render('realisation.twig');
+    }
 }
 
 
