@@ -222,13 +222,16 @@ body {
           position: absolute;
           width: 270px;
           height: 150px;
-          background-color: rgba(0, 0, 0, 0.5);
+          background-color: rgba(0, 0, 0, 0.1);
+          border: rgba(0, 0, 0, 0.5) 2px solid;
           display: none;
 
-          p{
+          i{
+            display: flex;
+            margin:auto;
             color: $color-my;
-            margin: auto;
-            font-size: 1.5em;
+            text-shadow: rgba(0, 0, 0, 1) 4px 0 4px;
+            font-size: 3em;
           }
         }
       }
@@ -310,13 +313,13 @@ body {
         letter-spacing: -5px!important;
       }
     }
+    footer {
+    height: 70px!important;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
-  footer {
-    height: 70px!important;
-  }
   .section-name {
       width: 400px!important;
       bottom: 70px!important;
