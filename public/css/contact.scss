@@ -6,7 +6,7 @@ $color-my: rgb(58, 209, 226);
 @keyframes animate_button2{
   0%{
     width: 150px;
-    height: 0;
+    height: 30px;
     border-top-color: $color-text;
     border-bottom-color: transparent;
     border-left-color: transparent;
@@ -47,29 +47,14 @@ $color-my: rgb(58, 209, 226);
 }
 
 
-.section-formulaire {
-
-  .form {
+.form {
     max-width: 500px;
-
-/*    h1 {
-      font-weight: 800;
-      color: transparent;
-      font-size: 60px;
-      background: url("../image/ordinateur2.png") repeat 1000% 50%;
-      -webkit-background-clip: text;
-      position: relative;
-      text-align: center;
-      line-height: 70px;
-      letter-spacing: -6px;
-      text-transform: uppercase;
-    }*/
 
     .form_block {
       padding: 15px;
       margin-top: 15px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      background-color: rgba(0, 206, 220, 0.5);
+      background-color: rgba(255, 255, 255, 0.2);
       text-align: center;
       border-radius: 10px;
 
@@ -115,6 +100,8 @@ $color-my: rgb(58, 209, 226);
           position: relative;
 
           i.fa-paper-plane {
+            color: $color-my;
+            text-shadow: rgba(0, 0, 0, 1) 2px 0 2px;
             position:absolute;
             top: 7px;
             right: 15px;
@@ -133,8 +120,6 @@ $color-my: rgb(58, 209, 226);
       }
     }
   }
-}
-
 
 
 
