@@ -8,16 +8,49 @@
 
 {% block content %}
 
+    {% include "titre_page.twig" with {'h1': 'Mon parcours'} %}
 
-    <main class="container section-parcours ">
+     <article class="parcours block text-justify p-4">
 
-    <div class="container">
-        <a href="index.php?action=user!home" > <i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
-    </div>
 
-    <section class="form px-0 m-5 mx-auto">
+        <p> J’ai été responsable de magasin pendant 13 ans puis directrice de boutiques pendant 5 ans. <br>
 
-        <h1 class="contact">Mon parcours</h1>
+        Durant cette dernière expérience professionnelle, je réalisais des campagnes mobiles, des bannières, des newsletters, des vidéos. Au début, une de mes tâches de directrice consistait à faire du design, mais j’ai évolué et commencé à toucher à la partie developpement WEB.
+        <br>
+
+        À la fin, j’étais très polyvalente cependant l’idée d'une spécialisation en developpement s'est éveillée. <br>
+
+        J'ai alors décidé de quitter mon poste afin de me consacrer à cette passion naissante.
+
+        Trés autodidacte et forte de mes motivations, je me suis formée via OPENCLASSROOMS et l'AIFCC.
+
+        Aujourd'hui, je suis de retour sur le marché de l’emploi et je vous présente mes compétences en developpement web certaines qu'elles vous seront utiles :
+
+
+        Je suis spécialisée dans la création, l’intégration de site web (CMS tel que WordPress ou pas) et le référencement de site internet.
+
+        Je peux prendre en charge toutes les étapes d'un projet, de la création graphique au développement en passant par le référencement.
+        </p>
+
+         <div class="mes_competences">
+             <p>Mes Compétences :
+                 <ul>
+                     <li> Conception graphique & Webdesign (Photoshop)</li>
+                     <li>Intégration HTML - CSS (Bootstrap) - SCSS</li>
+                     <li>Développement sous PHP - MySQL - Phyton</li>
+                     <li> Dynamise / Animation des pages par JavaScript (jQuery) / AJAX</li>
+                     <li> Référencement naturel SEO</li>
+                     <li>Site Responsive (compatible tous supports)</li>
+                     <li> Mises à jour régulières en fonction des besoins</li>
+                 </ul>
+             </p>
+         </div>
+
+         <a href="image/cv.jpg" download="CV_CAURIER" id="cv">Télécharger &nbsp; mon &nbsp; CV <i class="fas fa-download"></i></a>
+
+     </article>
+
+    </section>
 
 </main>
 
