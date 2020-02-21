@@ -8,15 +8,9 @@
 
 {% block content %}
 
-    <main class="container section-formulaire ">
+    {% include "titre_page.twig" with {'h1': 'Me contacter'} %}
 
-    <div class="container">
-        <a href="index.php?action=user!home" > <i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
-    </div>
-
-    <section class="form px-0 m-5 mx-auto">
-
-        <h1 class="contact">Me contacter</h1>
+    <section class="container form ">
 
         <article class="form_block" >
             <p class="form_title"><em>Email</em></p>
@@ -64,6 +58,8 @@
 
     </section>
 
-</main>
+        </section>
+
+    </main>
 
 {% endblock %}
