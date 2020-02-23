@@ -82,6 +82,13 @@ $color-my: rgb(58, 209, 226);
 
         input, textarea {
           width: 300px;
+          border:1px solid grey;
+        }
+
+        input:focus, textarea:focus{
+            outline: transparent;
+            border:1px solid $color-my;
+            box-shadow: $color-my 0 0 2px;
         }
       }
 
@@ -122,4 +129,14 @@ $color-my: rgb(58, 209, 226);
   }
 
 
+@media screen and (max-width: 990px) {
+  form .champs {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 
+    input, textarea {
+      width: 100%!important;
+    }
+  }
+}
