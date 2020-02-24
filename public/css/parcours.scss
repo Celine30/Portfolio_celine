@@ -61,6 +61,8 @@ h1 {
 }
 
 
+
+
 //******************REALISATION***********************//
 
 
@@ -169,5 +171,12 @@ h1 {
     section img {
       width: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  h1 {
+    font-size: 40px;
   }
 }
