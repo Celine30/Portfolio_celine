@@ -36,6 +36,11 @@ class UserController
     {
         return $this->twig->render('realisation.twig');
     }
+
+        public function mentions()
+    {
+        return $this->twig->render('mentions.twig');
+    }
 }
 
 
