@@ -94,7 +94,8 @@ main{
 
 body {
   width: 100vw;
-  background: url("../image/fond_ordinateur.png") no-repeat center fixed;
+  background: url("../image/fond_ordinateurB.png");
+  background-size: cover;
 
   header {
     min-height: 50px;
