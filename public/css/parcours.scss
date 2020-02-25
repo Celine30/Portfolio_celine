@@ -65,6 +65,12 @@ h1 {
 
 //******************REALISATION***********************//
 
+.section-realisation {
+  a{
+    text-decoration: none;
+    color: $color-text;
+  }
+}
 
 .block {
   background-color: rgba(255, 255, 255, 0.2);
@@ -80,6 +86,7 @@ h1 {
   display: flex;
   margin-bottom: 20px;
   cursor: pointer;
+  align-items: center;
 
   section img {
     width: 277px;
@@ -120,7 +127,9 @@ h1 {
 
 }
 
-.block.parcours {
+.block_parcours {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,5 +187,17 @@ h1 {
 
   h1 {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  section.button_site i {
+    display: none;
+    }
+
+  .block.rea .description section.resume {
+    width: 95%;
+    margin: auto;
   }
 }
