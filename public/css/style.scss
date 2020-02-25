@@ -94,7 +94,8 @@ main{
 
 body {
   width: 100vw;
-  background: url("../image/fond_ordinateur.png") no-repeat center fixed;
+  background: url("../image/fond_ordinateurB.png");
+  background-size: cover;
 
   header {
     min-height: 50px;
@@ -131,6 +132,7 @@ body {
   }
 
   #intro{
+
     .section-contact {
       overflow: hidden;
       padding: 20px;
@@ -204,7 +206,7 @@ body {
         position: relative;
         overflow: hidden;
         width: 270px;
-        height: 175px;
+        height: 161px;
         border: 1px solid rgba(0, 0, 0, 0.1);
 
         img {
@@ -224,7 +226,7 @@ body {
         div.backgroundGrey {
           position: absolute;
           width: 270px;
-          height: 150px;
+          height: 161px;
           background-color: rgba(0, 0, 0, 0.1);
           border: rgba(0, 0, 0, 0.5) 2px solid;
           display: none;

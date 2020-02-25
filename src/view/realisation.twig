@@ -8,81 +8,143 @@
 
 {% block content %}
 
-    {% include "titre_page.twig" with {'h1': 'realisation'} %}
+    {% include "titre_page.twig" with {'h1': 'mes réalisations'} %}
 
 
-        <article class="rea block">
+        <a href="https://www.izycom-communication.fr/projectBank/" target="_blank"><article class="rea block" id="gbaf">
             <section class="image">
-                <img class="screen_site" src="image/photo1.png" alt="logoPartner">
+                <img class="screen_site" src="public/image/project_bank.png" alt="image_project_bank">
             </section>
             <section class="description">
                 <section class="resume">
-                    <h3>HagerGroup </h3>
-                    <p class="resume_site">Intégration d'une page Web <br> HTML, SCSS, BOOTSTRAP4</p>
+                    <h3> GBAF </h3>
+                    <p class="resume_site">Extranet pour un groupe bancaire <br> HTML, CSS, PHP (mvc), SQL</p>
+                </section>
+                <section class="button_site">
+                    <p><i class="far fa-eye"></i></p>
+                </section>
+            </section>
+        </article></>
+
+        <a href="https://www.izycom-communication.fr/projet2/" target="_blank"><article class="rea block" id="chalet_et_caviar">
+            <section class="image">
+                <img class="screen_site" src="public/image/chalet_et_caviar.png" alt="image_chalet_et_caviar">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3> Chalets et Caviar </h3>
+                    <p class="resume_site">WORDPRESS pour agence immobilière <br> Thème enfant et plugins ajoutés suivant le besoin du client <br> Document et formation fournis au client </p>
                 </section>
                 <section class="button_site">
                     <i class="far fa-eye"></i>
                 </section>
             </section>
-        </article>
+        </article></a>
 
-        <article class="rea block">
+        <a href="https://www.izycom-communication.fr/HGTEST/" target="_blank"><article class="rea block" id="hg">
             <section class="image">
-                <img class="screen_site" src="image/photo2.png" alt="logoPartner">
+                <img class="screen_site" src="public/image/hg.png" alt="image_hg">
             </section>
             <section class="description">
                 <section class="resume">
-                    <h3>UnyLicorn </h3>
-                    <p class="resume_site">Intégration d'une page Web <br> HTML, CSS, BOOTSTRAP4</p>
-                </section>
-                <section class="button_site">
-                    <i class="far fa-eye"></i>
-                </section>
-            </section>
-        </article>
-
-        <article class="rea block">
-            <section class="image">
-                <img class="screen_site" src="image/photo3.png" alt="logoPartner">
-            </section>
-            <section class="description">
-                <section class="resume">
-                    <h3> WebAgency</h3>
-                    <p class="resume_site">Intégration d'une page Web <br> HTML, CSS</p>
+                    <h3> HagerGroup </h3>
+                    <p class="resume_site">Intégration d'une page Web suivant une maquette sketch <br> HTML, BOOTSTRAP4, SCSS , JQUERY</p>
                 </section>
                 <section class="button_site">
                    <i class="far fa-eye"></i>
                 </section>
             </section>
-        </article>
+        </article></a>
 
-        <article class="rea block" id="essai">
+        <a href="https://www.izycom-communication.fr/tchat/" target="_blank"><article class="rea block" id="">
             <section class="image">
-                <img class="screen_site" src="image/photo4.png" alt="logoPartner">
+                <img class="screen_site" src="public/image/tchat.png" alt="image_tchat">
             </section>
             <section class="description">
                 <section class="resume">
-                    <h3>Titre </h3>
-                    <p id="resumePartner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae dolor explicabo fugiat harum ipsam iure perferendis, rem saepe? Cupiditate debitis libero mollitia. Blanditiis deserunt ex explicabo facere maxime quas?</p>
+                    <h3>Tchat dévelppé avec AJAX </h3>
+                    <p class="resume_site"> Developpement d'une interface sur laquelle il est possible de tchater en direct <br> HTML, CSS, JQUERY, AJAX, PHP, SQL </p>
                 </section>
                 <section class="button_site">
-                    <i class="far fa-eye"></i>
+                   <i class="far fa-eye"></i>
                 </section>
             </section>
-        </article>
+        </article></a>
 
-        <article class="rea block">
+        <a href="https://www.izycom-communication.fr/blog_back/" target="_blank"><article class="rea block">
             <section class="image">
-                <img class="screen_site" src="image/photo1.png" alt="logoPartner">
+                <img class="screen_site" src="public/image/blog_back.png" alt="image_blog_back">
             </section>
-            <section class="resume">
-                <h3>Titre </h3>
-                <p id="resumePartner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae dolor explicabo fugiat harum ipsam iure perferendis, rem saepe? Cupiditate debitis libero mollitia. Blanditiis deserunt ex explicabo facere maxime quas?</p>
+            <section class="description">
+                <section class="resume">
+                    <h3> Back office d'un blog</h3>
+                    <p class="resume_site"> Developpement d'une interface sur laquelle le client peut ajouter, modifier ou supprimer des articles. <br> HTML, CSS, PHP (protocolaire), SQL </p>
+                </section>
+                <section class="button_site">
+                   <i class="far fa-eye"></i>
+                </section>
             </section>
-            <section class="button_site">
-                <i class="far fa-eye"></i>
+        </article></a>
+
+        <a href="https://www.izycom-communication.fr/strasbourg/" target="_blank"><article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="public/image/strasbourg.png" alt="image_strasbourg">
             </section>
-        </article>
+            <section class="description">
+                <section class="resume">
+                    <h3> Office du Tourisme Strasbourg </h3>
+                    <p class="resume_site">Projet professionnalisant OpenClassrooms <br> WORDPRESS <br> Thème enfant et plugins ajoutés suivant le besoin de la ville <br> Documents et formations fournis au client </p>
+                </section>
+                <section class="button_site">
+                   <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article></a>
+
+        <a href="https://www.izycom-communication.fr/myunicorn/" target="_blank"><article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="public/image/myunicorn.png" alt="image_myunicorn">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3> AIFCC </h3>
+                    <p class="resume_site">Exercice de rapidité :<br> Integration d'une page Web en moins de 4h <br> HTML, BOOTSTRAP4, CSS </p>
+                </section>
+                <section class="button_site">
+                   <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article></a>
+
+        <a href="https://www.izycom-communication.fr/archi/" target="_blank"><article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="public/image/archi.png" alt="image_archi">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3> La maison de l'architecture </h3>
+                    <p class="resume_site">Integration d'une page Web  <br> HTML, ANIMATION BOOTSTRAP4, CSS, JQUERY </p>
+                </section>
+                <section class="button_site">
+                   <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article></a>
+
+        <a href="https://www.izycom-communication.fr/zoror/" target="_blank"><article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="public/image/zoror.png" alt="image_zoror">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3> Zoror </h3>
+                    <p class="resume_site"> Exercice d'Integration d'une page Web simple <br> HTML, CSS </p>
+                </section>
+                <section class="button_site">
+                   <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article></a>
 
     </section>
         
