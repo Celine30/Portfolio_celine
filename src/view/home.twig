@@ -1,0 +1,68 @@
+{%  extends 'template.twig' %}
+{% block head %}
+    - accueil
+{% endblock %}
+
+{% block content %}
+
+<main class=" px-0 container-fluid">
+
+    <section id="intro" class="position-relative primsbox">
+
+        <section class="container-fluid section-contact px-0 d-flex flex-column">
+            <p class="icone-menu icone-menu1 d-inline text-right p-2"><a href="https://github.com/Celine30" target="_blank">Profil  GitHub<i class="fab fa-github pt-2 pb-2 pl-2 pr-1 ml-2"></i></a></p>
+            <p class="icone-menu icone-menu2 d-inline text-right p-2"><a href="https://www.linkedin.com/in/celine-caurier/" target="_blank">Profil LinkedIn <i class="fab fa-linkedin-in pt-2 pb-2 pl-2 pr-1"></i></a></p>
+            <p class="icone-menu icone-menu3 d-inline text-right p-2"><a href="index.php?action=user!contact">Me contacter <i class="fas fa-at pt-2 pb-2 pl-2 pr-1"></i></a></p>
+        </section>
+
+        <section class=" container section-name word position-absolute">
+              <div class="name">CéLINE DEVELOPPEUSE</div>
+              <div class="subtitle"> maîtrise les langages du developpement et Wordpress </div>
+        </section>
+
+    </section>
+
+<section class="section-presentation px-0 container">
+    <section id="mySummary" class="col-sm-11 mx-auto primsbox">
+
+        <p class="text-justify">J'ai découvert le plaisir de coder lors de mes expériences professionnelles. <br>
+                Je me suis alors spécialisée dans le domaine du développement web courant les années 2017-2018 pendant lesquelles , j'ai mis à jour mes compétences avec la formation Développeur web
+                junior, proposée par OpenClassrooms. En 2019, avec cette même école, j'ai aussi obtenu la validation
+                du parcours Prépa FullStack. <br>
+                Depuis décembre 2019, je monte en compétences à l'AIFCC de Caen ayant intégrée la formation SPAMIN (se préparer au métier de l'informatique et du numérique), et je souhaite intégrer la licence CSI
+                (concepteur de systèmes d'information) en Septembre 2019.
+        </p>
+
+        <div class="bx_bt d-flex justify-content-end"><a href="index.php?action=user!parcours" class="see_more">Mon parcours <i class="fas fa-long-arrow-alt-right"></i></a></div>
+
+    </section>
+
+    <section id="myProject-Parent" class="col-sm-11 mx-auto primsbox">
+
+        <section class="section-myProject d-flex justify-content-center justify-content-md-between flex-wrap align-content-center">
+                <figure>
+                    <img src="image/photo1.png" alt="photo1"/>
+                     <a href="index.php?action=user!realisation#essai"><div class="backgroundGrey"><i class="far fa-eye"></i> </div></a>
+                    <figcaption>HTML - SCSS - BOOTSTRAP</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/photo2.png" alt="photo2"/>
+                    <a href="#"><div class="backgroundGrey"><i class="far fa-eye"></i> </div></a>
+                    <figcaption>HTML - CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/photo3.png" alt="photo3"/>
+                    <a href="#"><div class="backgroundGrey"><i class="far fa-eye"></i> </div></a>
+                    <figcaption>HTML - CSS</figcaption>
+                </figure>
+        </section>
+
+        <div class="bx_bt d-flex justify-content-end"><a href="index.php?action=user!realisation" class="see_more">Mes projets <i class="fas fa-long-arrow-alt-right"></i></a></div>
+
+    </section>
+
+</section>
+
+</main>
+
+{% endblock %}

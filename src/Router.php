@@ -2,20 +2,20 @@
 
 
 namespace Project;
-use Project\Controller;
+use Project\controller;
 
 use Twig\Extension\DebugExtension;
-use Twig\Extensions\TextExtension;
+//use Twig\Extensions\TextExtension;
 
 
 class Router
 {
 
-    const DEFAULT_PATH = 'Project\Controller\\';
+    const DEFAULT_PATH = 'Project\controller\\';
 
     const DEFAULT_CONTROLLER = 'UserController';
 
-    const DEFAULT_METHOD = 'logout';
+    const DEFAULT_METHOD = 'home';
 
     private $twig = null;
 
@@ -42,7 +42,7 @@ class Router
 
         $this->twig->addExtension(new DebugExtension());
         $this->twig->addGlobal('session', $_SESSION);
-        $this->twig->addExtension(new TextExtension());
+//        $this->twig->addExtension(new TextExtension());
     }
 
     public function parseUrl()
@@ -53,7 +53,7 @@ class Router
         }
         $action = explode('!', $action);
         $this->controller = $action[0];
-        $this->method = count($action) == 1 ? 'logout' : $action[1];
+        $this->method = count($action) == 1 ? 'home' : $action[1];
     }
 
 

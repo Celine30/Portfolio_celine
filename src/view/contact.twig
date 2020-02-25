@@ -1,0 +1,64 @@
+{%  extends 'template.twig' %}
+
+
+
+{% block head %}
+    - contact
+{% endblock %}
+
+{% block content %}
+
+    {% include "titre_page.twig" with {'h1': 'Me contacter'} %}
+
+    <section class="container form ">
+
+        <article class="form_block" >
+            <p class="form_title"><em>Email</em></p>
+            <a href="mailto: celine@izycom-communication.fr" style="color: rgb(52, 52, 52); text-decoration: none; font-family: sans-serif, Arial, Verdana ">celine@izycom-communication.fr</a>
+        </article>
+
+        <article class="form_block">
+            <p class="form_title"><em>Formulaire de contact</em></p>
+            <form id="contact" method="post" action="index.php?action=back!contact">
+
+                <i style="color:darkgreen"><br>{{ message }}</i>
+
+                <div class="champs">
+                    <label for="name">Votre Nom *</label>
+                    <input type="text" id="name" aria-describedby="name" placeholder="Votre nom" name="name"
+                           required="required">
+                </div>
+
+                <div class="champs">
+                    <label for="mail">Votre Email *</label>
+                    <input type="email" id="mail" aria-describedby="mail" placeholder="Votremail@gmail.com" name="mail"
+                           required="required">
+                </div>
+
+                 <div class="champs">
+                    <label for="sujet">Sujet *</label>
+                    <input type="text" id="sujet" aria-describedby="sujet" placeholder="" name="sujet"
+                           required="required">
+                </div>
+
+                <div class="champs">
+                    <label for="message">Votre message *</label>
+                    <textarea id="message" aria-describedby="message" placeholder="Votre message" name="message"
+                              required="required"></textarea>
+                </div>
+
+                <div class="champs button">
+                    <button class=" pl-3"> Envoyer <i class="fas fa-paper-plane"></i></button>
+                </div>
+
+            </form>
+            <p class="form_info text-left"><i>* champs obligatoire </i></p>
+        </article>
+
+    </section>
+
+        </section>
+
+    </main>
+
+{% endblock %}

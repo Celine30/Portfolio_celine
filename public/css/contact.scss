@@ -1,0 +1,142 @@
+$color-text: #333;
+$color-primary:  #333;
+$color-my: rgb(58, 209, 226);
+
+
+@keyframes animate_button2{
+  0%{
+    width: 150px;
+    height: 30px;
+    border-top-color: $color-text;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  25%{
+    width: 150px;
+    height: 30px;
+    border-top-color: $color-text;
+    border-bottom-color:transparent ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  50%{
+    width: 150px;
+    height: 30px;
+    border-top-color:$color-text;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: $color-text;
+  }
+    75%{
+    width: 150px;
+    height: 30px;
+    border-top-color:$color-text;
+    border-bottom-color: $color-text;
+    border-left-color: transparent;
+    border-right-color: $color-text;
+  }
+    100%{
+    width: 150px;
+    height: 30px;
+    border-top-color:$color-text;
+    border-bottom-color: $color-text;
+    border-left-color: $color-text;
+    border-right-color: $color-text;
+  }
+}
+
+
+.form {
+    max-width: 500px;
+
+    .form_block {
+      padding: 15px;
+      margin-top: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: rgba(255, 255, 255, 0.2);
+      text-align: center;
+      border-radius: 10px;
+
+      .form_title {
+        margin-bottom: 15px;
+        text-decoration: underline;
+        font-weight: 800;
+        color: $color-text;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        padding-right: 5px;
+      }
+
+      .form_info {
+        font-size: 0.7em;
+
+      }
+
+      form .champs {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        input, textarea {
+          width: 300px;
+          border:1px solid grey;
+        }
+
+        input:focus, textarea:focus{
+            outline: transparent;
+            border:1px solid $color-my;
+            box-shadow: $color-my 0 0 2px;
+        }
+      }
+
+      form .champs.button {
+        margin: auto;
+        width: 150px;
+        height: 40px;
+        margin-top: 40px;
+        justify-content: center;
+
+        button {
+          width: 150px;
+          height: 30px;
+          background-color: transparent;
+          border: $color-my 1px solid;
+          position: relative;
+
+          i.fa-paper-plane {
+            color: $color-my;
+            text-shadow: rgba(0, 0, 0, 1) 2px 0 2px;
+            position:absolute;
+            top: 7px;
+            right: 15px;
+            visibility: hidden;
+
+          }
+        }
+      }
+
+      form .champs.button:hover button {
+        animation: animate_button2 0.5s linear forwards;
+      }
+
+      form .champs.button:hover i.fa-paper-plane {
+        visibility: visible;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 990px) {
+  form .champs {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    input, textarea {
+      width: 100%!important;
+    }
+  }
+}

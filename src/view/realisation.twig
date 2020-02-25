@@ -1,0 +1,91 @@
+{%  extends 'template.twig' %}
+
+
+
+{% block head %}
+    - mes réalisations
+{% endblock %}
+
+{% block content %}
+
+    {% include "titre_page.twig" with {'h1': 'realisation'} %}
+
+
+        <article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="image/photo1.png" alt="logoPartner">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3>HagerGroup </h3>
+                    <p class="resume_site">Intégration d'une page Web <br> HTML, SCSS, BOOTSTRAP4</p>
+                </section>
+                <section class="button_site">
+                    <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article>
+
+        <article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="image/photo2.png" alt="logoPartner">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3>UnyLicorn </h3>
+                    <p class="resume_site">Intégration d'une page Web <br> HTML, CSS, BOOTSTRAP4</p>
+                </section>
+                <section class="button_site">
+                    <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article>
+
+        <article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="image/photo3.png" alt="logoPartner">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3> WebAgency</h3>
+                    <p class="resume_site">Intégration d'une page Web <br> HTML, CSS</p>
+                </section>
+                <section class="button_site">
+                   <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article>
+
+        <article class="rea block" id="essai">
+            <section class="image">
+                <img class="screen_site" src="image/photo4.png" alt="logoPartner">
+            </section>
+            <section class="description">
+                <section class="resume">
+                    <h3>Titre </h3>
+                    <p id="resumePartner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae dolor explicabo fugiat harum ipsam iure perferendis, rem saepe? Cupiditate debitis libero mollitia. Blanditiis deserunt ex explicabo facere maxime quas?</p>
+                </section>
+                <section class="button_site">
+                    <i class="far fa-eye"></i>
+                </section>
+            </section>
+        </article>
+
+        <article class="rea block">
+            <section class="image">
+                <img class="screen_site" src="image/photo1.png" alt="logoPartner">
+            </section>
+            <section class="resume">
+                <h3>Titre </h3>
+                <p id="resumePartner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae dolor explicabo fugiat harum ipsam iure perferendis, rem saepe? Cupiditate debitis libero mollitia. Blanditiis deserunt ex explicabo facere maxime quas?</p>
+            </section>
+            <section class="button_site">
+                <i class="far fa-eye"></i>
+            </section>
+        </article>
+
+    </section>
+        
+</main>
+
+{% endblock %}

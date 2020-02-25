@@ -1,0 +1,23 @@
+{
+    "name": "caurier/portfolio_celine",
+    "description": "Mon Portfolio",
+    "authors": [
+        {
+            "name": "Celine",
+            "email": "celi.caurier@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.12"
+    },
+
+    "autoload": {
+          "psr-4": {
+             "Project\\": "src/"
+         }
+    },
+    "support": {
+        "email": "celi.caurier@gmail.com",
+        "source": "https://github.com/Celine30/Portfolio_celine"
+  }
+}

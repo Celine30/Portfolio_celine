@@ -1,0 +1,182 @@
+$color-text: #333;
+$color-primary: #333;
+$color-my: rgb(58, 209, 226);
+
+
+@keyframes animate_button3 {
+  0% {
+    width: 330px;
+    height: 35px;
+    border-top-color: $color-text;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  25% {
+    width: 330px;
+    height: 35px;
+    border-top-color: $color-text;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  50% {
+    width: 330px;
+    height: 35px;
+    border-top-color: $color-text;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: $color-text;
+  }
+  75% {
+    width: 330px;
+    height: 35px;
+    border-top-color: $color-text;
+    border-bottom-color: $color-text;
+    border-left-color: transparent;
+    border-right-color: $color-text;
+  }
+  100% {
+    width: 330px;
+    height: 35px;
+    border-top-color: $color-text;
+    border-bottom-color: $color-text;
+    border-left-color: $color-text;
+    border-right-color: $color-text;
+  }
+}
+
+
+h1 {
+  font-weight: 800;
+  color: transparent;
+  font-size: 60px;
+  background: url("../image/ordinateur2.png") repeat 990% 50%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  line-height: 70px;
+  letter-spacing: -6px;
+  text-transform: uppercase;
+}
+
+
+
+
+//******************REALISATION***********************//
+
+
+.block {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+  border: transparent 2px solid;
+  margin: auto;
+}
+
+.block.rea {
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  section img {
+    width: 277px;
+  }
+
+  .description {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+
+    section.resume {
+      width: 96%;
+      margin: auto auto auto 50px;
+    }
+
+    section.button_site i {
+      font-size: 2em;
+      padding: 20px;
+      visibility: hidden;
+      color: $color-my;
+      text-shadow: rgba(0, 0, 0, 1) 4px 0 4px;
+    }
+  }
+
+}
+
+
+.rea.block:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: rgba(0, 0, 0, 0.5) 2px solid;
+  //border: $color-my 2px solid;
+  //background-color: rgba(0, 206, 220, 0.5);
+}
+
+.rea.block:hover section.button_site i {
+  visibility: visible;
+
+}
+
+.block.parcours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a#cv {
+    margin: 20px;
+    font-weight: 800;
+    color: $color-text;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    padding-right: 5px;
+    text-decoration: none;
+    border: 1px $color-my solid;
+    width: 330px;
+    height: 35px;
+    position: relative;
+
+
+    i {
+      color: $color-my;
+      text-shadow: rgba(0, 0, 0, 1) 2px 0 2px;
+      visibility: hidden;
+      position: absolute;
+      top: 7px;
+      right: 15px;
+    }
+  }
+
+  a#cv:hover {
+    animation: animate_button3 0.5s linear forwards;
+
+    i {
+      visibility: visible;
+
+    }
+  }
+
+
+}
+
+
+@media screen and (max-width: 990px) {
+  .block.rea {
+    flex-direction: column;
+
+    section img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  h1 {
+    font-size: 40px;
+  }
+}
